@@ -9,5 +9,5 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/repository.git
+   git clone https://github.com/NeverWin77/html-css-base
    cd repository
