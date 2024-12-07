@@ -1,0 +1,76 @@
+body{
+    color: white;
+    background-color:#14161a;
+    font-family: Helvetica;
+}
+
+/* Общие стили для кнопок */
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #6a5acd, #7b68ee);
+    border: none;
+    border-radius: 30px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Мягкая тень */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Плавные переходы */
+    text-align: center;
+    text-decoration: none;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #7b68ee, #836fff);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Увеличение тени */
+    transform: translateY(-2px); /* Легкий подъем */
+}
+
+/* Активное состояние */
+button:active {
+    background: linear-gradient(135deg, #6a5acd, #5b5de8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Уменьшение тени */
+    transform: translateY(0); /* Убираем подъем */
+}
+
+/* Стили для отключенной кнопки */
+button:disabled {
+    background: #d3d3d3;
+    color: #a9a9a9;
+    box-shadow: none;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn {
+    display: grid;
+    place-items: center;
+    background: #e3edf7;
+    padding: 1.4em;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+            -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+  
+  .btn:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+            inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+            -0.5px -0.5px 0px rgba(255,255,255,1),
+            0.5px 0.5px 0px rgba(0,0,0,0.15),
+            0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    transform: translateY(0.5em);
+  }
+  
+  .btn svg {
+    transition: transform 0.5s;
+  }
+  
+  .btn:hover svg {
+    transform: scale(0.9);
+    fill: #333333;
+  }
